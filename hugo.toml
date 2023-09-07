@@ -1,4 +1,112 @@
-baseURL = 'http://example.org/'
+baseURL = 'wibufikasi.com'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Wibufikasi'
 theme = 'risotto'
+paginate = 3
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+enableEmoji = true
+
+# Automatically add content sections to main menu
+sectionPagesMenu = "main"
+
+[params]
+noindex = false
+
+[params.theme]
+palette = "base16-tokyo-night-dark"
+
+# Sidebar: about/bio
+[params.about]
+title = "My Links"
+# description = "My Personal Site for Portfolios and Stuff"
+logo = "images/frog.png"
+
+# Sidebar: social links
+# Available icon sets:
+# * FontAwesome 6 <https://fontawesome.com/> ('fa-brands', 'fa-normal', or 'fa-solid' for brands)
+# * Academicons <https://jpswalsh.github.io/academicons> ('ai ai-')
+
+[[params.socialLinks]]
+icon = "fa-brands fa-github"
+title = "GitHub"
+url = "https://github.com/Gorengwendy"
+
+[[params.socialLinks]]
+icon = "fa-solid fa-envelope"
+title = "Email"
+url = "mailto:denzel@wibufikasi.com"
+
+[[params.socialLinks]]
+icon = "fa-brands fa-goodreads"
+title = "Goodreads"
+url = "https://www.goodreads.com/user/show/114258163-denzel"
+
+[[params.socialLinks]]
+icon = "fa-brands fa-linkedin"
+title = "LinkedIn"
+url = "https://www.linkedin.com/in/denzel-wendy-3497a3181/"
+
+
+[[params.socialLinks]]
+icon = "fa-solid fa-briefcase"
+title = "Upwork"
+url = "https://www.upwork.com/freelancers/~0111a7d0351b854f38?viewMode=1 "
+[menu]
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About-me"
+    url = "/about"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "cv"
+    name = "cv"
+    url = "/cv"
+    weight = 10
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+# For hugo >= 0.60.0, enable inline HTML
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup]
+
+  # Table of contents
+  # Add toc = true to content front matter to enable
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel   = 3
+    ordered    = true
+
+[privacy]
+
+  [privacy.vimeo]
+    disabled = false
+    simple = true
+
+  [privacy.twitter]
+    disabled = false
+    enableDNT = true
+    simple = true
+
+  [privacy.instagram]
+    disabled = false
+    simple = true
+
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true
+
+[services]
+
+  [services.instagram]
+    disableInlineCSS = true
+
+  [services.twitter]
+    disableInlineCSS = true
