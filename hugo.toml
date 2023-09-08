@@ -1,4 +1,4 @@
-baseURL = 'wibufikasi.com'
+# baseURL = 'wibufikasi.com'
 languageCode = 'en-us'
 title = 'Wibufikasi'
 theme = 'risotto'
